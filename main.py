@@ -32,7 +32,7 @@ def but():
         # grouping
         daily_data = defaultdict(list)
         for forecast in b["list"]:
-            date = forecast["dt_txt"].split(" ")[0]  # Sadece tarihi al
+            date = forecast["dt_txt"].split(" ")[0]  
             daily_data[date].append(forecast)
         
       
@@ -50,7 +50,7 @@ def but():
             
             
             for forecast in forecasts:
-                time = forecast["dt_txt"].split(" ")[1]  # Saati al
+                time = forecast["dt_txt"].split(" ")[1]  
                 temp = forecast["main"]["temp"]
                 desc = forecast["weather"][0]["description"]
                 icon = forecast["weather"][0]["icon"]
